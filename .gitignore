@@ -1,3 +1,7 @@
+#Settings
+#.vscode
+# Will store VSCode settings sinsce there are Linux default settings only
+
 # Prerequisites
 *.d
 
@@ -30,3 +34,4 @@
 *.exe
 *.out
 *.app
+hex-grid/main

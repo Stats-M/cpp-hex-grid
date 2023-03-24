@@ -34,4 +34,9 @@
 *.exe
 *.out
 *.app
+
+# Executables VSCode copliles to
 hex-grid/main
+
+#Extra ignores
+/cmake-build-debug/

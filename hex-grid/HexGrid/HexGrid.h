@@ -3,6 +3,9 @@
 #pragma once
 
 #include "HexGridMetrics.h"
+#include "HexCoordinates.h"
+#include "HexCell.h"
+#include "HexChunk.h"
 
 /**
  * Class defines a hexagonal map, consisted from a set
@@ -46,14 +49,11 @@ public:
     // Returns total chunks on map
     [[nodiscard]] int GetTotalChunksCount() const;
 
-
     // Creates a cell instance and adds it to cell array(s)
     // X,Y,Z are cell's indexes in rectangular 3D array
     //void CreateCell(int32 X, int32 Y, int32 Z);
 
 protected:
-    // Called when the game mode starts or when spawned
-    //virtual void BeginPlay() override;
 
     // Linear array of spawned map chunks. From left to right, from closest line to most far away.
     // In UE4 coords that means from y=0 to TotalChunkCountWidth, from x=0 to TotalChunkCountHeight
@@ -65,20 +65,5 @@ protected:
     //TArray<UDMDHexCell *> GridCells{}; // Linear array of UDMDHexCell* (map cells)
 
 private:
-    // Amount of chunks in the grid (grid width)
-    int totalChunksCountWidth;
-
-    // Amount of chunks in the grid (grid height)
-    int totalChunksCountHeight;
-
-    // Total cells on map
-    int cellsTotalCount;
-
-    // Total chunks on map
-    int chunksTotalCount;
-
-    // Init grid-related variables with boundaries check
-    // (to be called in BeginPlay())
-//    void InitGridVariables();
 
 };

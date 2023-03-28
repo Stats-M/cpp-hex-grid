@@ -2,10 +2,6 @@
 
 #include "HexGrid.h"
 
-//HexGrid::HexGrid() : CellsTotalCount(0) {
-//
-//}
-
 HexGrid::HexGrid(int chunkSizeWidth, int chunkSizeHeight, int chunksCountWidth, int chunksCountHeight)
     : ChunkSizeWidth(chunkSizeWidth),
       ChunkSizeHeight(chunkSizeHeight),

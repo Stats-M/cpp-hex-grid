@@ -48,7 +48,6 @@ logs
 
 # Editor directories and files
 # .vscode/*
-!.vscode/extensions.json
 .idea
 .vscode
 .DS_Store
@@ -57,3 +56,5 @@ logs
 *.njsproj
 *.sln
 *.sw?
+# ...but allow save of VS Code extensions list
+!.vscode/extensions.json

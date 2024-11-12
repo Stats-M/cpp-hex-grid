@@ -1,7 +1,3 @@
-#Settings
-#.vscode
-# Will store VSCode settings sinsce there are Linux default settings only
-
 # Prerequisites
 *.d
 
@@ -35,8 +31,29 @@
 *.out
 *.app
 
-# Executables VSCode copliles to
+# Executables VSCode compliles to
 hex-grid/main
 
 #Extra ignores
 /cmake-build-debug/
+
+# Local files
+*.local
+.env
+.env.production
+
+# Logs
+logs
+*.log
+
+# Editor directories and files
+# .vscode/*
+!.vscode/extensions.json
+.idea
+.vscode
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
